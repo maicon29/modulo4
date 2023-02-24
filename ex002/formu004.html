@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        body{
+            background-color: rgb(121, 56, 175);
+        }
+        
+        fieldset{
+            background-color: rgb(255, 255, 255);
+            height: 200px;
+            width: 500px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+     
+       
+    </style>
+</head>
+<body>
+    <h1>Testando</h1>
+    <form action="teste.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados pessoal</legend>
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" autocomplete="email"required >
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+</html>
